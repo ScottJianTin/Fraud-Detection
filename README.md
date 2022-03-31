@@ -12,10 +12,10 @@ XGBoost
 1) Import libraries
 2) Load data
 3) Data preprocessing
-  - missing data
-  - balance of data
-  - outliers
-  - duplicates
+    - missing data
+    - balance of data
+    - outliers
+    - duplicates
 4) Train test split
 5) Build model
 6) Evaluate result
