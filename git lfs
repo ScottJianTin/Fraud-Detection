@@ -1,0 +1,19 @@
+# Steps to push large files into GitHub repository using git bash terminal:
+
+1) Download and install git https://git-scm.com/downloads
+2) Download and install GitLFS https://git-lfs.github.com/
+3) Clone your repository to your pc
+    a) go to respository & copy the clone URL (the link start with https and end with .git)
+    b) go to any directory in PC
+    c) right click background and select "Git Bash Here"
+    d) type: $ git clone (clone URL copied)
+    - a new folder of cloned GitHub repository will be created
+4) Copy paste the files you want to push to GitHub into this newly created folder
+5) Right click background and select "Git Bash Here"
+    a) type: $ git lfs track "filename.fileextension" (example: git lfs track "titanic.csv")
+    b) type: $ git add filename.fileextension (example: git add titanic.csv)
+    c) type: $ git config --global user.email "yourgithub@email.com"
+    d) type: $ git config --global user.name "your GitHub username"
+    e) type: $ git commit -m "commit message" (example: git commit -m "add titanic.csv")
+    f) type: $ git push origin master (if doesn't work, just type $ git push)
+6) The file will start uploading. After uploading is finished, you will notice the file is uploaded to your GitHub repository 
